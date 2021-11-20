@@ -1,0 +1,33 @@
+.toolbar {
+  background: white;
+  border: 1px solid #f2f2f2;
+  justify-content: space-between;
+  position:fixed;
+  & .buttons-div {
+    display: flex;
+    justify-content: space-around;
+
+    & button {
+      color: var(--primary);
+      font-family: "sofia_pro_bold" !important;
+      font-weight: 800;
+      font-size: 17px;
+
+      &.contactanos {
+        margin: 0 15px 0 8px;
+        border: 4px solid #0077b9;
+        border-radius: 30px;
+        opacity: 1;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        color: #058bcc;
+        display: block;
+        background-color: white;
+      }
+
+
+    }
+  }
+}
+

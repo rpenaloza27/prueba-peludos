@@ -1,0 +1,68 @@
+.banner-home {
+  min-height: calc((var(--vh, 1vh) * 100) - 50px);
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../assets/imgs/seguro-mascotas.jpg");
+  /* height: 64vw; */
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  /* max-height: 800px;*/
+
+  & .banner-div {
+    height: 100%;
+    background: linear-gradient(to top, #005684e0 0%, #006da88c 40%, #0083ca21 60%, #008ad400 100%);
+    display: flex;
+    align-items: flex-end;
+    flex: 1 0 auto;
+
+
+  }
+
+  & p {
+    line-height: 30px;
+  }
+
+  .group {
+    position: relative;
+    margin-bottom: 9px;
+    width: 100%;
+
+    & .btn-efecto {
+      font-size: 1rem;
+      padding: 16px 16px 0px;
+      display: block;
+      width: 100%;
+
+      background-color: transparent;
+      line-height: 1.2;
+      /* color: #455A81; */
+    }
+
+    & .input-peludo {
+      border-radius: 4px;
+      width: 90% !important;
+      padding: 20px;
+      margin-top: 20px;
+      &::placeholder {
+        color: white;
+      }
+    }
+
+
+  }
+
+  & .text-peludo {
+    font-family: "Gotham_Rounded_Book";
+    position: absolute;
+    top: 79%;
+    left: 44%;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+
+
+}
