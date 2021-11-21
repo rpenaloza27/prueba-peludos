@@ -1,14 +1,20 @@
 .toolbar {
   background: white;
-  border: 1px solid #f2f2f2;
+ // border: 1px solid #f2f2f2;
   justify-content: space-between;
   position:fixed;
+  height: 56px;
+  padding-left: 0;
+  z-index: 800000;
+  & img{
+    margin-left: 16px;
+  }
   & .buttons-div {
     display: flex;
     justify-content: space-around;
 
     & button {
-      color: var(--primary);
+      color: #058bcc;
       font-family: "sofia_pro_bold" !important;
       font-weight: 800;
       font-size: 17px;

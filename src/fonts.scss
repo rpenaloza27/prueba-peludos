@@ -1,0 +1,243 @@
+/*
+@font-face {
+    font-family: "proxima_nova_altblack";
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBlack-webfont.eot");
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBlack-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBlack-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBlack-webfont.woff")
+        format("woff"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBlack-webfont.ttf")
+        format("truetype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBlack-webfont.svg#proxima_nova_altblack")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* alternate bold */
+  
+  @font-face {
+    font-family: "proxima_nova_altbold";
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBold-webfont.eot");
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBold-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBold-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBold-webfont.woff")
+        format("woff"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBold-webfont.ttf")
+        format("truetype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltBold-webfont.svg#proxima_nova_altbold")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* regular */
+  
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltRegular-webfont.eot");
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltRegular-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      /*url('../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltRegular-webfont.woff2') format('woff2'),*/
+        url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltRegular-webfont.woff")
+        format("woff"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltRegular-webfont.ttf")
+        format("truetype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaAltRegular-webfont.svg#proxima_nova_altregular")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* scosfthin */
+  
+  @font-face {
+    font-family: "proxima_nova_scosfthin";
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaScOsfThin-webfont.eot");
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaScOsfThin-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaScOsfThin-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaScOsfThin-webfont.woff")
+        format("woff"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaScOsfThin-webfont.ttf")
+        format("truetype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaScOsfThin-webfont.svg#proxima_nova_scosfthin")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* semibold*/
+  
+  @font-face {
+    font-family: "proxima_nova_ltsemibold";
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaSemibold-webfont.eot");
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaSemibold-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaSemibold-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaSemibold-webfont.woff")
+        format("woff"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaSemibold-webfont.ttf")
+        format("truetype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaSemibold-webfont.svg#proxima_nova_ltsemibold")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* lightThin*/
+  
+  @font-face {
+    font-family: "proxima_nova_ltthin";
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaThin-webfont.eot");
+    src: url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaThin-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaThin-webfont.woff2")
+        format("woff2"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaThin-webfont.woff")
+        format("woff"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaThin-webfont.ttf")
+        format("truetype"),
+      url("../../fonts/proxima_nova/MarkSimonson-ProximaNovaThin-webfont.svg#proxima_nova_ltthin")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Bariol*/
+  
+  @font-face {
+    font-family: "bariol_regular";
+    src: url("../../fonts/bariol/bariol-cufonfonts/bariol_regular-webfont.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Poppins regular*/
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Poppins light */
+  
+  @font-face {
+    font-family: "Poppins_light";
+    src: url("../../fonts/Poppins/Poppins-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Poppins medium */
+  
+  @font-face {
+    font-family: "Poppins_medium";
+    src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Poppins semiBold */
+  
+  @font-face {
+    font-family: "Poppins_semiBold";
+    src: url("../../fonts/Poppins/Poppins-SemiBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Poppins Bold */
+  
+  @font-face {
+    font-family: "Poppins_bold";
+    src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Sofia Pro */
+  
+  @font-face {
+    font-family: "sofia_pro_regular";
+    src: url("../../fonts/sofia_pro_regular-webfont.eot");
+    src: url("../../fonts/sofia_pro_regular-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../fonts/sofia_pro_regular-webfont.woff2") format("woff2"),
+      url("../../fonts/sofia_pro_regular-webfont.woff") format("woff"),
+      url("../../fonts/sofia_pro_regular-webfont.ttf") format("truetype"),
+      url("../../fonts/sofia_pro_regular-webfont.svg#sofia_pro_regular")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Sofia Pro medium */
+  
+  @font-face {
+    font-family: "sofia_pro_medium";
+    src: url("../../fonts/sofia_pro_medium-webfont.eot");
+    src: url("../../fonts/sofia_pro_medium-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../fonts/sofia_pro_medium-webfont.woff2") format("woff2"),
+      url("../../fonts/sofia_pro_medium-webfont.woff") format("woff"),
+      url("../../fonts/sofia_pro_medium-webfont.ttf") format("truetype"),
+      url("../../fonts/sofia_pro_medium-webfont.svg#sofia_pro_medium")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Sofia Pro semi bold */
+  
+  @font-face {
+    font-family: "sofia_pro_semi_bold";
+    src: url("../../fonts/sofia_pro_semi_bold-webfont.eot");
+    src: url("../../fonts/sofia_pro_semi_bold-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../fonts/sofia_pro_semi_bold-webfont.woff2") format("woff2"),
+      url("../../fonts/sofia_pro_semi_bold-webfont.woff") format("woff"),
+      url("../../fonts/sofia_pro_semi_bold-webfont.ttf") format("truetype"),
+      url("../../fonts/sofia_pro_semi_bold-webfont.svg#sofia_pro_semi_bold")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Sofia Pro bold */
+  
+  @font-face {
+    font-family: "sofia_pro_bold";
+    src: url("../../fonts/sofia_pro_bold-webfont.eot");
+    src: url("../../fonts/sofia_pro_bold-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../fonts/sofia_pro_bold-webfont.woff2") format("woff2"),
+      url("../../fonts/sofia_pro_bold-webfont.woff") format("woff"),
+      url("../../fonts/sofia_pro_bold-webfont.ttf") format("truetype"),
+      url("../../fonts/sofia_pro_bold-webfont.svg#sofia_pro_bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Sofia Pro light */
+  
+  @font-face {
+    font-family: "sofia_pro_light";
+    src: url("../../fonts/sofia_pro_light-webfont.eot");
+    src: url("../../fonts/sofia_pro_light-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("../../fonts/sofia_pro_light-webfont.woff2") format("woff2"),
+      url("../../fonts/sofia_pro_light-webfont.woff") format("woff"),
+      url("../../fonts/sofia_pro_light-webfont.ttf") format("truetype"),
+      url("../../fonts/sofia_pro_light-webfont.svg#sofia_pro_light") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }

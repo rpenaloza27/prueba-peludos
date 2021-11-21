@@ -1,20 +1,6 @@
-<div class="banner-home">
-    <div class="banner-div">
-        <div class="container px-30 w-428">
-            <div class="d-flex flex-column align-items-center mb-1 position-img">
-                <img src="assets/imgs/SP_LOGO_VA.svg" alt="" width="350px">
-                <p class="text-peludo fz-13 white"> ¡Protege a los que más amas!</p>
-            </div>
-            <div class="group">
-                
-                <input type="text" class="btn-efecto mb-3 input-peludo br-white-1 br--4 white placeholder-aqua bg-transparent w-100 fz-14 only-letters" placeholder="Nombre de tu peludito">                
-                
-            </div>
-            <button class="br--8 br--none py-12 bg-yellow3 letraCot fz-14 w-100 mb-3 shadows--02">CONOCE MÁS</button>
-            <div class="mx-auto mb-30 circle cursor-pointer mt-0 bg-white aqua d-flex justify-content-center align-items-center shadows--02" style="width: 48px;
-            height: 48px;">
-                <fa-icon [icon]="faChevronDown"></fa-icon>
-            </div>
-        </div>
-    </div>
+<div class="banner-home" id="home">
+    <app-banner-home></app-banner-home>
+    <app-why-section></app-why-section>
+    <app-plans-section></app-plans-section>
+    <app-club-section></app-club-section>
 </div>

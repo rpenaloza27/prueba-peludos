@@ -8,12 +8,20 @@ import { ToolbarComponent } from './layouts/toolbar/toolbar.component';
 import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './pages/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BannerHomeComponent } from './components/banner-home/banner-home.component';
+import { WhySectionComponent } from './components/why-section/why-section.component';
+import { PlansSectionComponent } from './components/plans-section/plans-section.component';
+import { ClubSectionComponent } from './components/club-section/club-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    HomeComponent
+    HomeComponent,
+    BannerHomeComponent,
+    WhySectionComponent,
+    PlansSectionComponent,
+    ClubSectionComponent
   ],
   imports: [
     BrowserModule,

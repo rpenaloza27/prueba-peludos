@@ -1,0 +1,18 @@
+.banner-div {
+    height: 100%;
+    background: linear-gradient(to top, #005684e0 0%, #006da88c 40%, #0083ca21 60%, #008ad400 100%);
+    display: flex;
+    align-items: flex-end;
+    flex: 1 0 auto;
+
+
+  }
+
+  .text-peludo {
+    font-family: "Gotham_Rounded_Book";
+    position: absolute;
+    top: 79%;
+    left: 44%;
+    font-weight: 500;
+    white-space: nowrap;
+  }
