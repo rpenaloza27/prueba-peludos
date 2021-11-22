@@ -31,4 +31,11 @@ export class PlannerComponent implements OnInit {
     
   }
 
+  setPlan(planName:string, price:number){
+    if(this.planner.plan){
+      this.planner.plan.planName=planName;
+      this.planner.plan.planPrice=price;
+    }
+  }
+
 }

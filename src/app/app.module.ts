@@ -19,6 +19,7 @@ import { PlannerComponent } from './pages/planner/planner.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StepperComponent } from './components/stepper/stepper.component';
 import { FooterPlanComponent } from './components/footer-plan/footer-plan.component';
+import { CotizacionComponent } from './pages/cotizacion/cotizacion.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FooterPlanComponent } from './components/footer-plan/footer-plan.compon
     FooterComponent,
     PlannerComponent,
     StepperComponent,
-    FooterPlanComponent
+    FooterPlanComponent,
+    CotizacionComponent
   ],
   imports: [
     BrowserModule,
