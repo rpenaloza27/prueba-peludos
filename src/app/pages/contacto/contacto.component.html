@@ -1,0 +1,47 @@
+<div class="contacto">
+    <div class="contacto__image">
+      <img src="assets/imgs/Grupo 1464.svg" alt="" draggable="false">
+      <img src="assets/imgs/Grupo 1676.svg" alt="" draggable="false">
+      <img src="assets/imgs/Grupo 1361.svg" alt="" draggable="false">
+      <img src="assets/imgs/img/Grupo 1554.svg" alt="" draggable="false">
+    </div>
+    <div class="contacto_card">
+      <div class="contacto_card_header">
+        <fa-icon [icon]="faPaw"></fa-icon>
+        <h1 class="contacto_card_header_title">Contáctanos</h1>
+        <fa-icon [icon]="faPaw"></fa-icon>
+      </div>
+      <div class="contacto_card_body" id="formSol">
+        <p style="font-size: 14px; color: #8E8E8E; margin-bottom: 36px;" class="text-center">Un buen amigo te escucha y hace lo imposible para brindarte la atención que te mereces. Danos la oportunidad de ser mejores y cuéntanos cómo podemos ayudarte.</p>
+        <div class="group">
+          <input maxlength="50" class="btn-efecto mb-3 input-peludo br-aqua-1 br--4 blue--ext placeholder-aqua bg-transparent w-100 fz-14 only-letters" type="text" id="txtContacNombre" name="txtContacNombre" required="">
+          <label for="" class="label-effect aqua">Nombre Completo</label>
+        </div>
+        <div class="group">
+          <input maxlength="50" class="btn-efecto mb-3 input-peludo br-aqua-1 br--4 blue--ext placeholder-aqua bg-transparent w-100 fz-14" type="text" id="txtContacCorreo" name="txtContacCorreo" required="">
+          <label for="" class="label-effect aqua">Correo Electrónico</label>
+        </div>
+        <div class="group">
+          <input maxlength="50" class="btn-efecto mb-3 input-peludo br-aqua-1 br--4 blue--ext placeholder-aqua bg-transparent w-100 fz-14 only-numbers" id="txtContacTelefono" name="txtContacTelefono" required="" inputmode="numeric">
+          <label for="" class="label-effect aqua">Teléfono Celular</label>
+        </div>
+        <div class="group br-aqua-1 br--4 mb-3 pt-4">
+          <textarea style="height: 124px;" cols="30" rows="15" class="btn-efecto br--none input-peludo blue--ext pt-0 placeholder-aqua bg-transparent w-100 fz-14 only-letters" name="txtContacDescripcion" id="txtContacDescripcion"></textarea>
+          <label style="top:8px" for="" class="label-effect aqua">Descripcion</label>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <label class="checkbox-custom-label mr-4 w-16">
+            <input type="checkbox" name="checkAceptoTerm" id="checkAceptoTerm" class="checkbox-custom">
+            <span class="checkmark square-check-icon-border"></span>
+          </label>
+          <label for="checkAceptoTerm" class="text-left pcheck gray_2 cursor-pointer no-text-select fz-14">Autorizo a Seguros Mundial para almacenar, recolectar, gestionar y tratar mis datos personales, con el fin de dar trámite a la solicitud, queja o derecho de petición, de acuerdo con lo dispuesto en la 
+            <a href="https://www.segurosmundial.com.co/legal/" target="_blank" class="gray_2 text-decoration-none w-100 text-center"> <strong>Política de Protección de Datos Personales de Seguros Mundial.</strong> </a> </label>
+        </div>
+  
+        <div class="group d-flex justify-content-center">
+          <button id="btnEnviar" disabled="" style="width: 176px; height: 36px; display: flex;
+          align-items: center; justify-content: center; margin-top: 12px;" class="br--8 br--none py-12 bg-aqua white fz-14 mb-3 shadows--02">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>

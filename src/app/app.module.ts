@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { StepperComponent } from './components/stepper/stepper.component';
 import { FooterPlanComponent } from './components/footer-plan/footer-plan.component';
 import { CotizacionComponent } from './pages/cotizacion/cotizacion.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CotizacionComponent } from './pages/cotizacion/cotizacion.component';
     PlannerComponent,
     StepperComponent,
     FooterPlanComponent,
-    CotizacionComponent
+    CotizacionComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
