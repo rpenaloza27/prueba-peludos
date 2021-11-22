@@ -1,4 +1,4 @@
-<mat-toolbar class="toolbar">
+<mat-toolbar class="toolbar" *ngIf="isHome">
     <img src="assets/imgs/logo.svg" alt="">
     <div class="buttons-div">
         <button mat-button >¿Por qué?</button>
@@ -9,3 +9,15 @@
         <button mat-stroked-button class="contactanos">Contáctanos</button>
     </div>
 </mat-toolbar>
+
+<div id="mobile-head" class="bg-white d-flex position-relative" *ngIf="!isHome">
+    <div class="logo_mobile text-center w-100 d-flex align-item-center justify-content-center">
+        <a class=" py-0" href="/"><img class="img-fluid mx-auto" src="/img/Grupo 968.svg" alt="Seguros mundial" draggable="false"></a>
+    </div>
+    <div id="botones-menu-desk" class="position-absolute align-items-center" style="right:0; top:50%; transform: translateY(-50%)">
+                    <button class="contactanos-btn px-sm-4 px-3" onclick="window.location.href='/contacto.php'">Contáctanos</button>
+    </div>
+    <div id="botones-menu-mobile" class="position-absolute align-items-center" style="left:16px; top:50%; transform: translateY(-50%)">
+        <i onclick="openMenu()" class="fal fa-bars fz-24 cursor-pointer" style="color: #0077B9"></i>
+    </div>
+</div>

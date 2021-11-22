@@ -1,0 +1,126 @@
+<div class="bg-aqua bg-pets shadows-inset-02 comenzar home-section flex-1-0-auto columns">
+    <div class="container px-30 d-grid flex-1-0-auto columns ">
+        <div class="w-400 mx-auto pt-60" id="formulario">
+            <div class="d-flex align-items-center flex-column mb-24 position-img">
+
+                <img src="assets/imgs/SP_LOGO_VA.svg" alt="Mascotas" style="max-width:100%" width="350px" class="mb-3"
+                    id="img-form">
+                <p class="text-peludo fz-13 white"> ¡Protege a los que más amas!</p>
+
+
+                <!--   <img src="img/logo-peludo.svg" alt="Mascotas" width="350px" class="mb-3" id="img-form"> -->
+                <!-- <img src="/img/XMLID_1_.svg" alt="Mascotas" width="90px"> -->
+                <!-- <p class="fw-bold white fz-30 text-center" style="line-height:35px;">SEGURO<br>PELUDO</p> -->
+            </div>
+            <form [formGroup]="frmCotize" (submit)="submit()">
+                <div class="group">
+                    <input maxlength="20" autocomplete="off"
+                        class="btn-efecto mb-12 input-peludo br-white-1 br--4 grey placeholder-aqua bg-white w-100 fz-14 only-letters"
+                        [ngClass]="{'invalid-input': isInvalid(controls.name_pet)}"
+                        type="text" id="nombrePel" required="" formControlName="name_pet">
+                    <label for="" class="label-effect aqua" [ngClass]="{'text-red': isInvalid(controls.name_pet)}" >Nombre del peludito</label>
+                    <ng-container *ngIf="isInvalid(controls.name_pet)">
+                        <label class="text-red" *ngIf="controls.name_pet.errors?.required">Este campo es requerido</label>
+                    </ng-container>
+                </div>
+                <nav class="col-12 px-0 mb-12">
+                    <div class="nav nav-tabs toogle-btn triangle" role="tablist">
+                        <a class="nav-item nav-link py-3" [ngClass]="{'active': typePet=='perro'}" (click)="selectType('perro')" data-toggle="tab"  role="tab" 
+                            aria-selected="true" id="tabPerro">PERRO</a>
+                        <a class="nav-item nav-link py-3" data-toggle="tab" [ngClass]="{'active': typePet=='gato'}" role="tab"
+                            aria-selected="false" id="tabGato" (click)="selectType('gato')">GATO</a>
+                        <span class="after-tab" [ngClass]="{'transform-0': typePet=='perro', 'transform-100': typePet=='gato'}"></span>
+                    </div>
+                </nav>
+                <nav class="col-12 px-0 mb-12">
+                    <div class="nav nav-tabs toogle-btn triangle" role="tablist">
+                        <a class="nav-item nav-link active py-3" data-toggle="tab"  role="tab"  [ngClass]="{'active': genre=='hembra'}"
+                            aria-selected="true" data-val="15" id="tabHembra" (click)="selectGenre('hembra')">HEMBRA</a>
+                        <a class="nav-item nav-link py-3" data-toggle="tab" role="tab" [ngClass]="{'active': genre=='macho'}"
+                            aria-selected="false" data-val="14" id="tabMacho" (click)="selectGenre('macho')">MACHO</a>
+                        <span class="after-tab" [ngClass]="{'transform-0': genre=='hembra', 'transform-100': genre=='macho'}"></span>
+                    </div>
+                </nav>
+
+                <div class="d-flex ">
+                    <div class="col-4 pl-0 pr-7-5">
+                        <input maxlength="2" autocomplete="off"
+                            class="btn-efecto mb-12 input-peludo br-white-1 br--4 grey placeholder-aqua bg-white w-100 fz-14 only-numbers"
+                            [ngClass]="{'invalid-input': isInvalid(controls.age)}"
+                            type="text" id="edadPel" required="" inputmode="numeric" formControlName="age">
+                        <label for="" class="label-effect aqua" [ngClass]="{'text-red': isInvalid(controls.age)}">Edad</label>
+                        <ng-container *ngIf="isInvalid(controls.age)">
+                            <label class="text-red" *ngIf="controls.age.errors?.required">Este campo es requerido</label>
+                        </ng-container>
+                    </div>
+
+                    <div class="col-8 pr-0 pl-7-5">
+                        <div class="select-awesome aqua">
+                            <select name="edad" id="edad" class="btn-efecto bg-white overflow-hidden br-white-1 br--4"
+                                required="" formControlName="months">
+                                <option value=""></option>
+                                <option value="meses">Meses</option>
+                                <option value="años">Años</option>
+                            </select>
+                            <label class="pl-3 select-effect aqua">Meses o Años</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12 col-sm-12 px-0">
+                    <div class="select-awesome aqua">
+                        <div class="select-awesome bg-white grey br-aqua-1 br--4 select-padding-left"
+                            style="height:56px;">
+                            <select name="raza" id="raza" class="select2 btn-efecto bg-white overflow-hidden"
+                                 formControlName="raza">
+                                 <option [value]="item.text" *ngFor="let item of razas">{{item.text}}</option>
+                                
+                            </select>
+                            <label class="select-effect aqua">Raza</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <input maxlength="50" autocomplete="off"
+                        class="btn-efecto mb-12 input-peludo br-white-1 br--4 grey placeholder-aqua bg-white w-100 fz-14"
+                        [ngClass]="{'invalid-input': isInvalid(controls.email)}"
+                        type="text" id="txtCorreo" required="" formControlName="email">
+                    <label for="" class="label-effect aqua" [ngClass]="{'text-red': isInvalid(controls.email)}">Correo electrónico</label>
+                    <ng-container *ngIf="isInvalid(controls.email)">
+                        <label class="text-red" *ngIf="controls.email.errors?.required">Email es requerido</label>
+                        <label class="text-red" *ngIf="controls.email.errors?.email">Debe ser un email válido</label>
+                    </ng-container>
+                    
+                </div>
+                <span id="result"></span>
+                <div class="d-flex align-items-center mb-3">
+                    <label class="checkbox-custom-label mr-4 w-16">
+                        <input type="checkbox" name="checkAceptoTerm" id="checkAceptoTerm" class="checkbox-custom" formControlName="acceptTerms">
+                        <span class="checkmark square-check-icon"></span>
+                    </label>
+                    <label for="checkAceptoTerm" class="text-left pcheck white cursor-pointer no-text-select fz-14">He
+                        leído y acepto la
+                        <a href="/politica-datos.php" target="_blank"
+                            class="white text-decoration-none w-100 text-center"><strong>política de datos</strong></a>,
+                        así como los
+                        <a href="/terminos-condiciones.php" target="_blank"
+                            class="white text-decoration-none w-100 text-center"> <strong>términos y
+                                condiciones.</strong> </a> </label>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="br--8 br--none py-2 bg-yellow2 letraCot fz-14 w-100 mb-24 shadows--02" [disabled]="!frmCotize.valid"
+                        id="btnAsegurar" >COTIZAR</button>
+                </div>
+            </form>
+
+
+            <div class="flex-1-0-auto  py-4 d-flex justify-content-center align-items-center">
+                <div class="mx-auto circle cursor-pointer bg-white aqua d-flex justify-content-center align-items-center shadows--02"
+                    onclick="scrollUp(this)" style="width:48px; height:48px;">
+                    <i class="fz-24 far fa-chevron-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

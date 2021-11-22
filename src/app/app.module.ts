@@ -5,13 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './layouts/toolbar/toolbar.component';
-import { MaterialModule } from './material/material.module';
+import { MaterialCModule } from './material/material.module';
 import { HomeComponent } from './pages/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BannerHomeComponent } from './components/banner-home/banner-home.component';
 import { WhySectionComponent } from './components/why-section/why-section.component';
 import { PlansSectionComponent } from './components/plans-section/plans-section.component';
 import { ClubSectionComponent } from './components/club-section/club-section.component';
+import { CotizeSectionComponent } from './components/cotize-section/cotize-section.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { PlannerComponent } from './pages/planner/planner.component';
+import { HttpClientModule } from '@angular/common/http';
+import { StepperComponent } from './components/stepper/stepper.component';
+import { FooterPlanComponent } from './components/footer-plan/footer-plan.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +28,22 @@ import { ClubSectionComponent } from './components/club-section/club-section.com
     BannerHomeComponent,
     WhySectionComponent,
     PlansSectionComponent,
-    ClubSectionComponent
+    ClubSectionComponent,
+    CotizeSectionComponent,
+    FooterComponent,
+    PlannerComponent,
+    StepperComponent,
+    FooterPlanComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    FontAwesomeModule
+    MaterialCModule,
+    FontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100vh; width: 100%; margin:0;padding:0;overflow-x:hidden}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @font-face {
@@ -2041,7 +2041,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
   .select-awesome:after {
     content: "\f13a";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-size: 24px;
     right: 25px;
     top: 10px;
@@ -2111,7 +2111,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
   
   .checkmark:after {
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     display: block;
     font-size: 12px;
   }
@@ -2920,7 +2920,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .user-edit .after {
     background: #4da7c9;
     color: white;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     right: 0px;
     font-size: 24px;
@@ -3894,7 +3894,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     content: "\f00c";
     font-size: 30px;
     color: white;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
   }
   
   .range > div .slider--effect {
@@ -3929,7 +3929,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .range > div.por-pagar:after {
     position: absolute;
     content: "\f12a";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     background: #ff2929;
     color: #fff;
     padding: 1px 8px;
@@ -3958,7 +3958,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .range > div.pagar:after {
     position: absolute;
     content: "\f00c";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     background: #82d6c9;
     color: #fff;
     padding: 2px 5px;
@@ -3987,7 +3987,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .range > div.no-pagado:after {
     position: absolute;
     content: "\f30d";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     background: #afafaf;
     color: #f5f5f5;
     padding: 2px 6px;
@@ -4371,7 +4371,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
   .after-tab:after {
     content: "\f2ec";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-size: 14px;
     font-weight: bold;
     color: #f2c447;
@@ -4640,7 +4640,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
   .plus-btn:after {
     content: "\f067";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-size: 18px;
     left: 9px;
     top: 4px;
@@ -8421,7 +8421,7 @@ position: relative;
 
 .select-awesome:after {
     content: "\f13a";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-size: 24px;
     right: 15px;
     top: 10px;
@@ -8493,7 +8493,7 @@ header {
 }
 
 .checkmark:after {
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     display: block;
     font-size: 12px;
 }
@@ -9272,7 +9272,7 @@ bottom: 0px; */
 .user-edit .after {
     background: #4da7c9;
     color: white;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     right: 0px;
     font-size: 24px;
@@ -10254,7 +10254,7 @@ padding-right:2px;
     content: "\f00c";
     font-size: 30px;
     color: white;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
 }
 
 .range>div .slider--effect {
@@ -10289,7 +10289,7 @@ padding-right:2px;
 .range>div.por-pagar:after {
     position: absolute;
     content: "\f12a";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     background: #ff2929;
     color: #fff;
     padding: 1px 8px;
@@ -10318,7 +10318,7 @@ padding-right:2px;
 .range>div.pagar:after {
     position: absolute;
     content: "\f00c";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     background: #82d6c9;
     color: #fff;
     padding: 2px 5px;
@@ -10347,7 +10347,7 @@ padding-right:2px;
 .range>div.no-pagado:after {
     position: absolute;
     content: "\f30d";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     background: #afafaf;
     color: #f5f5f5;
     padding: 2px 6px;
@@ -10734,7 +10734,7 @@ tbody.amortizacion tr:last-child td {
 
 .after-tab:after {
     content: "\f2ec";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-size: 14px;
     font-weight: bold;
     color: #f2c447;
@@ -10998,7 +10998,7 @@ tbody.amortizacion tr:last-child td {
 
 .plus-btn:after {
     content: "\f067";
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Free";
     font-size: 18px;
     left: 9px;
     top: 5px;

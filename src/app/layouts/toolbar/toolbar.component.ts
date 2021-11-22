@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent implements OnInit {
-
-  constructor() { }
+  @Input() isHome:boolean=true
+  constructor(private router:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.router.url
+    
+    this.router.url.subscribe(res=>{
+      console.log("IsHome", res)
+    })
   }
 
 }

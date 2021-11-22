@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { faChevronDown, faChevronUp, faStar, faCheck } from '@fortawesome/free-solid-svg-icons';
 @Component({
@@ -10,9 +11,11 @@ export class HomeComponent implements OnInit {
   faChevronUp = faChevronUp;
   faStar = faStar;
   faCheck = faCheck;
-  constructor() { }
+  
+  constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
+    
   }
 
 }

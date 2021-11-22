@@ -1,0 +1,546 @@
+<app-stepper></app-stepper>
+<div id="planes" class="body-page mt-180 fit">
+  <div class="mx-auto w-368 section-mobile">
+    <img src="assets/imgs/cuatro-mascotas.png" alt="mascotas" width="100%" draggable="false">
+  </div>
+  <div class="section-desktop justify-content-center">
+    <p class="text-center grey fz-20" style="padding-top:28px;padding-bottom:0px">Elige el plan que se adapta a las
+      necesidades de <strong>{{planner.plan?.name_pet}}</strong></p>
+  </div>
+  <div class="container section-mobile">
+    <div class="w-560 mx-auto">
+      <p class="aqua m-2 text-center fw-bold">PLANES Y COBERTURAS</p>
+      <p class="grey mb-3 text-center">Elige el plan que se adapta a las necesidades de <strong>dsds</strong></p>
+
+
+      <div class="grid-3c grid-gap--15 bb-2-aqua">
+        <div class="bg-aqua pb-12 pt-3 br-top--8 tab-peludo cursor-pointer cursor-pointer" panel="1" id="1">
+          <p class="white fz-14 text-center">Básico</p>
+        </div>
+
+        <div class="overflow-hidden bg-yellow--light tab-peludo br-top--8 pb-2 cursor-pointer cursor-pointer active"
+          panel="2" id="2">
+          <div class="bg-yellow--light d-flex align-items-center" style="height:16px; padding:0px 3px;">
+            <div style="width:18px; height:14px"
+              class="bg-yellow circle d-flex justify-content-center align-items-center">
+              <i class="fas fa-star fz-8 white"></i>
+            </div>
+            <p class="yellow--dark fz-10 text-center w-100">Popular</p>
+            <div style="width:18px; height:14px"
+              class="bg-yellow circle d-flex justify-content-center align-items-center">
+              <i class="fas fa-star fz-8 white"></i>
+            </div>
+          </div>
+          <p class="white fz-14 text-center">Estándar</p>
+        </div>
+
+
+        <div class="bg-aqua pb-12 pt-3 br-top--8 tab-peludo cursor-pointer cursor-pointer" panel="3" id="3">
+          <p class="white fz-14 text-center">Premium</p>
+        </div>
+
+      </div>
+
+      <p class="text-center blue--dark fz-14 py-12">Suscripción Mensual</p>
+      <div class="grid-3c grid-gap--15 bb-2-aqua pb-20 panel-peludo">
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">
+          <strong>$20.000</strong><br>Mensual
+        </div>
+
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+          <strong>$28.000</strong><br>Mensual
+        </div>
+
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+          <strong>$36.000</strong><br>Mensual
+        </div>
+
+        <span class="after" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+      <p class="text-center blue--dark fz-14 py-12">Gastos médicos por accidente</p>
+      <div class="grid-3c grid-gap--15 bb-2-aqua pb-20 panel-peludo">
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">
+
+          Máximo 1<br> evento por año
+          <br><strong>$250.000</strong>
+
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+
+          Máximo 2<br> eventos por año
+          <br><strong>$250.000</strong>
+
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+
+          Máximo 3<br> eventos por año
+          <br><strong>$250.000</strong>
+
+        </div>
+        <span class="after" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+      <p class="text-center blue--dark fz-14 py-12">Servicio eutanasia por enfermedad o accidente</p>
+      <div class="grid-3c grid-gap--15 bb-2-aqua pb-20 panel-peludo">
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">
+          Máximo
+          <!-- 1<br>                           evento por año
+                       -->
+
+          <br><strong>$300.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+          Máximo
+          <!-- 1<br>                           evento por año
+                       -->
+
+          <br><strong>$350.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+          Máximo
+          <!-- 1<br>                           evento por año
+                       -->
+
+          <br><strong>$400.000</strong>
+        </div>
+        <span class="after" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+      <p class="text-center blue--dark fz-14 py-12">Asistencia funeraria, cremación por enfermedad o accidente</p>
+      <div class="grid-3c grid-gap--15 bb-2-aqua pb-20 panel-peludo">
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">
+          Máximo
+          <!-- 1<br>                           evento por año
+                                               -->
+          <br><strong>$300.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+          Máximo
+          <!-- 1<br>                           evento por año
+                                               -->
+          <br><strong>$350.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+          Máximo
+          <!-- 1<br>                           evento por año
+                                               -->
+          <br><strong>$400.000</strong>
+        </div>
+        <span class="after" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+      <p class="text-center blue--dark fz-14 py-12">Consulta médica veterinaria a domicilio por accidente</p>
+      <div class="grid-3c grid-gap--15 bb-2-aqua pb-20 panel-peludo">
+
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">No aplica</div>
+        <!-- <div></div> -->
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+          Máximo 2<br> eventos por año
+
+          <br><strong>$60.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+          Máximo 3<br> eventos por año
+
+          <br><strong>$120.000</strong>
+        </div>
+        <span class="after" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+      <p class="text-center blue--dark fz-14 py-12">Guardería por accidente o enfermedad del asegurado</p>
+      <div class="grid-3c grid-gap--15 bb-2-aqua pb-20 panel-peludo">
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">No aplica</div>
+        <!-- <div></div> -->
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+          <strong>4 días,</strong><br>Máximo 3<br> eventos por año
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+          <strong>8 días,</strong><br>Máximo 3<br> eventos por año
+        </div>
+        <span class="after" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+      <p class="text-center blue--dark fz-14 py-12">Muerte accidental de la mascota</p>
+      <div class="grid-3c grid-gap--15 bb-2-aqua pb-20 panel-peludo">
+
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">No aplica</div>
+        <!-- <div></div> -->
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+          Cubre hasta<br><strong>$500.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+          Cubre hasta<br><strong>$1.000.000</strong>
+        </div>
+        <span class="after" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+      <p class="text-center blue--dark fz-14 py-12">Responsabilidad civil extracontractual</p>
+      <p class="blue--dark fz-12 text-center pb-10">Daños a bienes de terceros</p>
+      <div class="grid-3c grid-gap--15 pb-10 panel-peludo">
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">
+          Cubre hasta<br><strong>$10.000.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+          Cubre hasta<br><strong>$15.000.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+          Cubre hasta<br><strong>$20.000.000</strong>
+        </div>
+      </div>
+
+      <p class="blue--dark fz-12 text-center pb-10">Lesiones o muerte a terceros</p>
+      <div class="grid-3c grid-gap--15 pb-10 panel-peludo">
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">
+          Cubre hasta<br><strong>$10.000.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+          Cubre hasta<br><strong>$15.000.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+          Cubre hasta<br><strong>$20.000.000</strong>
+        </div>
+      </div>
+
+      <p class="blue--dark fz-12 text-center pb-10">Gastos médicos de urgencia</p>
+      <div class="grid-3c grid-gap--15 pb-10 panel-peludo">
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">
+          Cubre hasta<br><strong> Máximo 4 eventos por año $500.000 c/u</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+          Cubre hasta<br><strong> Máximo 4 eventos por año $750.000 c/u</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+          Cubre hasta<br><strong> Máximo 4 eventos por año $1.000.000 c/u</strong>
+        </div>
+      </div>
+
+      <p class="blue--dark fz-12 text-center pb-10">Gastos de Defensa</p>
+      <div class="grid-3c grid-gap--15 bb-2-aqua pb-10 panel-peludo">
+        <div class="text-center aqua fz-12 cursor-pointer" panel="1">
+          Cubre hasta<br><strong>$3.000.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer active" panel="2">
+          Cubre hasta<br><strong>$4.500.000</strong>
+        </div>
+        <div class="text-center aqua fz-12 cursor-pointer" panel="3">
+          Cubre hasta<br><strong>$6.000.000</strong>
+        </div>
+        <span class="after" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container section-desktop mt-60" style="max-width:1140px;">
+    <div class="mx-auto container-table-right">
+      <div class="grid-4c bg-white panel-peludo parent-inset-shadow-left">
+        <div class="bg-white not-tab"></div>
+        <div class="bg-yellow pb-12 pt-50 br-top--12 tab-peludo desktop cursor-pointer cursor-pointer" panel="1" id="1">
+          <div class="huellas-logo bg-aqua">
+            <div class="bg-blue--dark huella-1">
+              <img src="assets/imgs/Huella-text-white.svg" class="position-absolute"
+                style="top:50%;left:50%;transform:translate(-50%,-50%);" alt="huella" draggable="false">
+            </div>
+          </div>
+          <p class="white fz-18 text-center">Plan Básico</p>
+        </div>
+
+        <div class="bg-yellow tab-peludo desktop pt-50 br-top--12 pb-2 cursor-pointer cursor-pointer active" panel="2"
+          id="2">
+          <div class="huellas-logo bg-aqua">
+            <div class="bg-blue--dark huella-2">
+              <img src="assets/imgs/Huella-text-white.svg" class="position-absolute"
+                style="top:50%;left:50%;transform:translate(-100%,0%);" alt="huella" draggable="false">
+              <img src="assets/imgs/Huella-text-white.svg" class="position-absolute"
+                style="top:50%;left:50%;transform:translate(0%,-100%);" alt="huella" draggable="false">
+            </div>
+          </div>
+          <p class="white fz-18 text-center">Plan Estándar</p>
+        </div>
+        <div class="bg-yellow pb-12 pt-50 br-top--12 tab-peludo desktop cursor-pointer cursor-pointer" panel="3" id="3">
+          <div class="huellas-logo bg-aqua">
+            <div class="bg-blue--dark huella-3">
+              <img src="assets/imgs/Huella-text-white.svg" class="position-absolute"
+                style="top:50%;left:50%;transform:translate(-110%,0%);" alt="huella" draggable="false">
+              <img src="assets/imgs/Huella-text-white.svg" class="position-absolute"
+                style="top:50%;left:50%;transform:translate(-50%,-130%);" alt="huella" draggable="false">
+              <img src="assets/imgs/Huella-text-white.svg" class="position-absolute"
+                style="top:50%;left:50%;transform:translate(10%,0%);" alt="huella" draggable="false">
+            </div>
+          </div>
+          <p class="white fz-18 text-center">Plan Premium</p>
+        </div>
+
+        <span class="after desktop main" [ngClass]="{'transform-0': planner.plan?.planName=='basic', 'transform-100': planner.plan?.planName=='estandar','transform-200': planner.plan?.planName=='premium'}">
+          <div class="line-after left"></div>
+          <div class="circle-after"></div>
+          <div class="line-after right"></div>
+        </span>
+        <!-- <span class="huellas-header">
+                  <div class="huellas-logo"></div>
+                  <div class="huellas-logo"></div>
+                  <div class="huellas-logo"></div>
+              </span> -->
+      </div>
+
+      <div class="grid-4c panel-desktop-peludo bb-2-aqua  panel-peludo">
+        <div class="description-row not-tab py-3">
+          <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+            <i class="fal fa-usd-circle fz-30 white text-center"></i>
+          </div>
+          <p class="pl-2 pr-3 fz-14 grey">Suscripción Mensual</p>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="1">
+          <strong>$20.000</strong><br>Mensual
+        </div>
+
+        <div class="text-center aqua fz-16 cursor-pointer active" panel="2">
+          <strong>$28.000</strong><br>Mensual
+        </div>
+
+        <div class="text-center aqua fz-16 cursor-pointer" panel="3">
+          <strong>$36.000</strong><br>Mensual
+        </div>
+
+        <span class="after desktop" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+      <div class="grid-4c panel-desktop-peludo bb-2-aqua  panel-peludo">
+        <div class="description-row not-tab py-3">
+          <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+            <i class="fal fa-crutches fz-30 white text-center"></i>
+          </div>
+          <p class="pl-2 pr-3 fz-14 grey">Gastos Médicos por Accidente</p>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="1">
+
+          Máximo 1<br> evento por año
+          <br><strong>$250.000</strong>
+
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer active" panel="2">
+
+          Máximo 2<br> eventos por año
+          <br><strong>$250.000</strong>
+
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="3">
+
+          Máximo 3<br> eventos por año
+          <br><strong>$250.000</strong>
+
+        </div>
+        <span class="after desktop" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+      <div class="grid-4c panel-desktop-peludo bb-2-aqua  panel-peludo">
+        <div class="description-row not-tab py-3">
+          <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+            <i class="fal fa-syringe fz-30 white text-center"></i>
+          </div>
+          <p class="pl-2 pr-3 fz-14 grey">Servicio eutanasia por enfermedad o accidente</p>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="1">
+          Máximo
+          <!--  1<br>                           evento por año
+                       -->
+
+          <br><strong>$300.000</strong>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer active" panel="2">
+          Máximo
+          <!--  1<br>                           evento por año
+                       -->
+
+          <br><strong>$350.000</strong>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="3">
+          Máximo
+          <!--  1<br>                           evento por año
+                       -->
+
+          <br><strong>$400.000</strong>
+        </div>
+        <span class="after desktop" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+      <div class="grid-4c panel-desktop-peludo bb-2-aqua  panel-peludo">
+        <div class="description-row not-tab py-3">
+          <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+            <i class="fal fa-dove fz-30 white text-center"></i>
+          </div>
+          <p class="pl-2 pr-3 fz-14 grey">Asistencia funeraria cremación por enfermedad o accidente</p>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="1">
+          Máximo
+          <!--  1<br>                           evento por año
+                                               -->
+          <br><strong>$300.000</strong>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer active" panel="2">
+          Máximo
+          <!--  1<br>                           evento por año
+                                               -->
+          <br><strong>$350.000</strong>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="3">
+          Máximo
+          <!--  1<br>                           evento por año
+                                               -->
+          <br><strong>$400.000</strong>
+        </div>
+        <span class="after desktop" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+      <div class="grid-4c panel-desktop-peludo bb-2-aqua  panel-peludo">
+
+        <div class="description-row not-tab py-3">
+          <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+            <i class="fal fa-ambulance fz-30 white text-center"></i>
+          </div>
+          <p class="pl-2 pr-3 fz-14 grey">Consulta médica veterinaria a domicilio por accidente</p>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="1">No aplica</div>
+        <!-- <div></div> -->
+        <div class="text-center aqua fz-16 cursor-pointer active" panel="2">
+          Máximo 2<br> eventos por año
+
+          <br><strong>$60.000</strong>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="3">
+          Máximo 3<br> eventos por año
+
+          <br><strong>$120.000</strong>
+        </div>
+        <span class="after desktop" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+      <div class="grid-4c panel-desktop-peludo bb-2-aqua  panel-peludo">
+        <div class="description-row not-tab py-3">
+          <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+            <i class="fal fa-baby-carriage fz-30 white text-center"></i>
+          </div>
+          <p class="pl-2 pr-3 fz-14 grey">Guardería por accidente o enfermedad del asegurado</p>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="1">No aplica</div>
+        <!-- <div></div> -->
+        <div class="text-center aqua fz-16 cursor-pointer active" panel="2">
+          <strong>4 días,</strong><br>Máximo 3<br> eventos por año
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="3">
+          <strong>8 días,</strong><br>Máximo 3<br> eventos por año
+        </div>
+        <span class="after desktop" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+      <div class="grid-4c panel-desktop-peludo bb-2-aqua  panel-peludo">
+
+        <div class="description-row not-tab py-3">
+          <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+            <i class="fal fa-feather-alt fz-30 white text-center"></i>
+          </div>
+          <p class="pl-2 pr-3 fz-14 grey">Muerte accidental de la mascota</p>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="1">No aplica</div>
+        <!-- <div></div> -->
+        <div class="text-center aqua fz-16 cursor-pointer active" panel="2">
+          Cubre hasta<br><strong>$500.000</strong>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer" panel="3">
+          Cubre hasta<br><strong>$1.000.000</strong>
+        </div>
+        <span class="after desktop" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+      <div class="grid-4c panel-desktop-peludo bb-2-aqua panel-peludo multipanel">
+        <div class="description-row not-tab py-3">
+          <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+            <i class="fal fa-users fz-30 white text-center"></i>
+          </div>
+          <p class="pl-2 pr-3 fz-14 grey">Responsabilidad Civil Extracontractual</p>
+        </div>
+        <div class="sub-title-container">
+          <p class="pt-3 fz-14 grey text-center fw-bold sub-title">Daños a terceros</p>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer bb-2-greylight" panel="1">
+          Cubre hasta<br><strong>$10.000.000</strong>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer bb-2-greylight active" panel="2">
+          Cubre hasta<br><strong>$15.000.000</strong>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer bb-2-greylight" panel="3">
+          Cubre hasta<br><strong>$20.000.000</strong>
+        </div>
+        <!-- <span class="after desktop"></span> -->
+
+        <!-- </div>
+
+          <div class="grid-4c panel-desktop-peludo panel-peludo"> -->
+        <!-- <div class="description-row not-tab py-3">
+                  <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+                      <i class="fal fa-usd-circle fz-30 white text-center"></i>
+                  </div>
+                  <p class="pl-2 pr-3 fz-14 grey">Suscripción Mensual</p>
+              </div> -->
+        <div class="sub-title-container">
+          <p class="pt-3 fz-14 grey text-center fw-bold sub-title">Lesiones o muerte a terceros</p>
+        </div>
+        <div class="text-center light aqua fz-16 cursor-pointer bb-2-greylight" panel="1">
+          Cubre hasta<br><strong>$10.000.000</strong>
+        </div>
+        <div class="text-center light aqua fz-16 cursor-pointer bb-2-greylight active" panel="2">
+          Cubre hasta<br><strong>$15.000.000</strong>
+        </div>
+        <div class="text-center light aqua fz-16 cursor-pointer bb-2-greylight" panel="3">
+          Cubre hasta<br><strong>$20.000.000</strong>
+        </div>
+        <!-- <span class="after desktop"></span> -->
+
+        <!-- </div>
+
+          <div class="grid-4c panel-desktop-peludo  panel-peludo"> -->
+        <!-- <div class="description-row not-tab py-3">
+                  <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+                      <i class="fal fa-usd-circle fz-30 white text-center"></i>
+                  </div>
+                  <p class="pl-2 pr-3 fz-14 grey">Suscripción Mensual</p>
+              </div> -->
+        <div class="sub-title-container">
+          <p class="pt-3 fz-14 grey text-center fw-bold sub-title">Gastos médicos de urgencia</p>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer bb-2-greylight" panel="1">
+          Cubre hasta<br><strong> Máximo 4 eventos por año $500.000 c/u</strong>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer bb-2-greylight active" panel="2">
+          Cubre hasta<br><strong> Máximo 4 eventos por año $750.000 c/u</strong>
+        </div>
+        <div class="text-center aqua fz-16 cursor-pointer bb-2-greylight" panel="3">
+          Cubre hasta<br><strong> Máximo 4 eventos por año $1.000.000 c/u</strong>
+        </div>
+        <!-- <span class="after desktop"></span> -->
+
+        <!-- </div>
+
+          <div class="grid-4c panel-desktop-peludo bb-2-aqua  panel-peludo"> -->
+        <!-- <div class="description-row not-tab py-3">
+                  <div class="mr-1 h-100 br--10 bg-yellow--light d-flex justify-content-center align-items-center px-2">
+                      <i class="fal fa-usd-circle fz-30 white text-center"></i>
+                  </div>
+                  <p class="pl-2 pr-3 fz-14 grey">Suscripción Mensual</p>
+              </div> -->
+        <div class="sub-title-container">
+          <p class="pt-3 fz-14 grey text-center fw-bold sub-title">Gastos de defensa</p>
+        </div>
+        <div class="text-center light aqua fz-16 cursor-pointer" panel="1">
+          Cubre hasta<br><strong>$3.000.000</strong>
+        </div>
+        <div class="text-center light aqua fz-16 cursor-pointer active" panel="2">
+          Cubre hasta<br><strong>$4.500.000</strong>
+        </div>
+        <div class="text-center light aqua fz-16 cursor-pointer" panel="3">
+          Cubre hasta<br><strong>$6.000.000</strong>
+        </div>
+        <span class="after desktop last" style="opacity: 1; transform: translate(100%);"></span>
+      </div>
+
+    </div>
+  </div>
+</div>
+<app-footer-plan></app-footer-plan>
